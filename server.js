@@ -13,9 +13,8 @@ const servidor = http.createServer((req, res) => {
             console.log("Detalhes de requisição");
             console.log("Headers", req.headers);
         }
-    
+     
         res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
-        res.write("<h1>Data e Hora Local!</h1>");
         res.write(data);
         res.end()
     });
