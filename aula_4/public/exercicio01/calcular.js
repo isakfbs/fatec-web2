@@ -6,18 +6,14 @@ import subtrair from "./subtrair.js";
 export function calcular(num1, num2, operacao) {
   switch (operacao) {
     case "+":
-      console.log(somar(num1, num2));
-      break;
+      return somar(num1, num2);
     case "-":
-      console.log(subtrair(num1, num2));
-      break;
+      return subtrair(num1, num2);
     case "*":
-      console.log(multiplicar(num1, num2));
-      break;
+      return multiplicar(num1, num2);
     case "/":
-      console.log(dividir(num1, num2));
-      break;
+      return dividir(num1, num2);
     default:
-      console.log("Operação inválida!");
+      return "Operação inválida!";
   }
 }

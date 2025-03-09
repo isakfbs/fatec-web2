@@ -23,19 +23,65 @@
       importado.
     </p>
 
-    <div id="exercicio_01">
-      <input type="text" name="num1" id="num1" />
-      <select name="operacoes" id="operacoes">
+    <div id="exercicio_01" class="calculadora">
+      <input type="text" name="num1" id="num1" class="input-numero" />
+      <select name="operacoes" id="operacoes" class="select-operacao">
         <option value="+">Somar</option>
         <option value="-">Subtrair</option>
         <option value="*">Multiplicar</option>
         <option value="/">Dividir</option>
       </select>
-      <input type="text" name="num1" id="num2" />
-      <input type="button" name="calcular" id="calcular" value="=" />
-      <p>resultado:</p>
+      <input type="text" name="num1" id="num2" class="input-numero" />
+      <input
+        type="button"
+        name="calcular"
+        id="calcular"
+        value="="
+        class="botao-calcular"
+      />
+      <p>resultado:<span id="resultado01"></span></p>
     </div>
 
+    <h3>Atividade 2</h3>
+    <p><strong> Inverter um Array Objetivo:</strong></p>
+    <p>Usar um loop for para inverter a ordem dos elementos em um array.</p>
+    <p>
+      Descrição: Crie um array de números e use um loop for para inverter a
+      ordem de seus elementos.
+    </p>
+    <p>
+      Exemplo: transforme o array [1, 2, 3, 4, 5] em [5, 4, 3, 2, 1]. Armazene o
+      resultado em um novo array.
+    </p>
+    <p>Bônus: chamar a operação por meio de uma função em arquivo externo</p>
+    <div class="calculadora">
+      <p>Insira os números separados por vírgula:</p>
+      <input type="text" id="arrayInput" placeholder="Ex: 1, 2, 3, 4 ..." />
+      <button id="inverterBtn">Inverter</button>
+      <p>Resultado: <span id="resultado02"></span></p>
+    </div>
+
+    <h3>Atividade 3</h3>
+    <p>Gerar uma Lista de Números Pares</p>
+
+    <p>
+      <strong>Objetivo:</strong> Utilizar um loop for para gerar um array
+      contendo os primeiros N números pares.
+    </p>
+    <p>
+      <strong>Descrição:</strong> Dado um número N, use um loop for para criar
+      um array que contém os primeiros N números pares (começando de 2). Imprima
+      o array resultante.
+    </p>
+    <p>
+      <strong>Bônus:</strong> chamar a operação por meio de uma função em
+      arquivo externo
+    </p>
+    <div class="calculadora">
+      <input type="number" name="numeroInput" id="numeroInput" />
+      <button id="listarParesBtn">Listar Pares</button>
+      <p>Resultado: <span id="resultado03"></span></p>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
