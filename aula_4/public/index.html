@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 04</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Aula 04</h1>
+    <h2>Exercicios:</h2>
+    <h3>Atividade 1</h3>
+    <p>
+      Crie 4 funções uma para cada tipo de operação: somar, dividir, multiplicar
+      e subtrair, onde cada função deverá receber dois números e retorna o
+      resultado com base na operação que será o sinal no inicio do código.
+    </p>
+    <p>
+      Detalhes: criar 4 arquivos somar.js, subtrair.js, multiplicar.js.
+      dividir.js. Aplicar a importação e exportação. os 4 arquivos precisam ser
+      importados no arquivo principal e mediante o sinal que poderá ser fixo e
+      uma estrutura de controle if ou switch chamar a função do arquivo
+      importado.
+    </p>
+
+    <div id="exercicio_01">
+      <input type="text" name="num1" id="num1" />
+      <select name="operacoes" id="operacoes">
+        <option value="+">Somar</option>
+        <option value="-">Subtrair</option>
+        <option value="*">Multiplicar</option>
+        <option value="/">Dividir</option>
+      </select>
+      <input type="text" name="num1" id="num2" />
+      <input type="button" name="calcular" id="calcular" value="=" />
+      <p>resultado:</p>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
