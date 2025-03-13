@@ -1,0 +1,14 @@
+<h1>Página sendo exibida utilizando EJS</h1>
+
+<ul>
+    <% for(var i=0; i<pessoas.length; i++) {%>
+        <li>
+            Nome: <%= pessoas[i].nome %>
+        </li>
+        <li>
+            Idade: <%= pessoas[i].idade %>
+            <br>
+            <br>
+        </li>
+        <% } %>
+</ul>
