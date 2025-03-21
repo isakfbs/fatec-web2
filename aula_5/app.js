@@ -9,26 +9,21 @@ const HOST = process.env.HOST || '127.0.0.1';
 app.set('view engine','ejs');
 app.set('views','./views');
 
-const pessoas = [
-    {
-        'nome': 'Isak Silva',
-        'idade': 27
-    },
-    {
-        'nome': 'Vinicius Mattera',
-        'idade': 19,
-    },
-    {
-        'nome': 'Abraão Santos',
-        'idade': 23,
-    },
-]
-
-
 app.use('/home', homeRoutes)
 
-app.get('/sobre', (req,res)=>{
-    res.render('sobre')})
+app.get('/', (req,res)=>{
+    res.status(200).render('index',{ 
+        title: 'Página Inicial', 
+        message: 'Bem-vindo ao Express com EJS!' 
+    })})
+
+    app.get('/sobre', (req, res) => {
+        res.status(200).render('index', 
+            { 
+                title: 'sobre com Express',
+                message: 'Página sobre!' 
+            });
+    });
 
 // const rotaAdmin = express.Router();
 
